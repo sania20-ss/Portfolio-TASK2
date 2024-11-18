@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#contact h1 {
+    color: darkseagreen;
+    text-decoration: underline;
+}
+
+.name {
+    font-family: "Playball", serif;
+    font-weight: 200;
+    font-style: italic;
+    background: linear-gradient(to left, red, blueviolet, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+    color: blueviolet;
+}
+
+.main {
+    padding: 100px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.highlight {
+    width: 60%;
+    max-width: 600px;
+}
+
+[btn] {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+[btn] button {
+    background-color: #74BDC7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #6699B3;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+[btn] button:hover {
+    background-color: white;
+    color: black;
+}
+
+.photo {
+    width: 35%;
+    max-width: 400px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+[prof] {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, red, yellow, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about {
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    scroll-margin: 20px;
+}
+
+[lft], [rgt] {
+    flex: 1;
+    min-width: 300px;
+}
+
+[lft] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: blueviolet;
+}
+
+[lft] img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+[rgt] {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 50px 20px;
+}
+
+#skills h1 {
+    color: rgb(37, 115, 11);
+    text-decoration: underline;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+#project {
+    padding: 50px 20px;
+}
+
+#project h1 {
+    color: purple;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.cards {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.crd {
+    height: 250px;
+    width: 300px;
+    background-color: #74BDC7;
+    border: 3px outset black;
+    flex-shrink: 0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+
+.crd:hover {
+    transform: scale(1.05);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
